@@ -7,9 +7,9 @@ void setup()
 }
 void draw()
 {
+  text ("Total: " + total, 250, 360);
   noLoop();
   background(0, 0, 0);
-  text ("Total: " + total, 250, 360);
   total=0;
   for(int a =50; a<300; a+=60){
     for(int b = 50; b<300; b+=60){
