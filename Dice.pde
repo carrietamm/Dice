@@ -9,7 +9,6 @@ void draw()
 {
   noLoop();
   background(0, 0, 0);
-  text ("Total: " + total, 250, 360);
   total=0;
   for(int a =50; a<300; a+=60){
     for(int b = 50; b<300; b+=60){
@@ -17,7 +16,9 @@ void draw()
     bob.roll();
     bob.show();
     }
-  }}
+  }
+text ("Total: " + total, 250, 360);}
+
 void mousePressed()
 {
   redraw();
@@ -34,8 +35,8 @@ class Die //models one single dice cube
 
   void roll()
   {
-   // dieRoll= (int) (Math.random()*6)+1;
-  dieRoll= 1;
+   dieRoll= (int) (Math.random()*6)+1;
+  //dieRoll= 2;
     total = total + dieRoll;
   }
   void show() {
