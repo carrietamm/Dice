@@ -34,7 +34,8 @@ class Die //models one single dice cube
 
   void roll()
   {
-    dieRoll= (int) (Math.random()*6)+1;
+   // dieRoll= (int) (Math.random()*6)+1;
+  dieRoll= 1
     total = total + dieRoll;
   }
   void show() {
